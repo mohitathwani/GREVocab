@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFNetworking.h"
 
 @interface GVViewController : UIViewController
+
+@property (nonatomic, strong) NSArray *jsonArray;
+@property (weak, nonatomic) IBOutlet UILabel *wordLabel;
+@property (weak, nonatomic) IBOutlet UILabel *partOfSpeechLabel;
+@property (weak, nonatomic) IBOutlet UITextView *definitionTextView;
+@property (weak, nonatomic) IBOutlet UITextView *sentenceTextView;
+- (IBAction)tapGesture:(UITapGestureRecognizer *)sender;
 
 @end

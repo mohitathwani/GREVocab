@@ -1,476 +1,1088 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		E43B07BB1849B37D00C93772 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43B07BA1849B37D00C93772 /* Foundation.framework */; };
-		E43B07BD1849B37D00C93772 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43B07BC1849B37D00C93772 /* CoreGraphics.framework */; };
-		E43B07BF1849B37D00C93772 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43B07BE1849B37D00C93772 /* UIKit.framework */; };
-		E43B07C51849B37D00C93772 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E43B07C31849B37D00C93772 /* InfoPlist.strings */; };
-		E43B07C71849B37D00C93772 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E43B07C61849B37D00C93772 /* main.m */; };
-		E43B07CB1849B37D00C93772 /* GVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E43B07CA1849B37D00C93772 /* GVAppDelegate.m */; };
-		E43B07CE1849B37D00C93772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43B07CC1849B37D00C93772 /* Main.storyboard */; };
-		E43B07D11849B37D00C93772 /* GVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43B07D01849B37D00C93772 /* GVViewController.m */; };
-		E43B07D31849B37D00C93772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43B07D21849B37D00C93772 /* Images.xcassets */; };
-		E43B07DA1849B37D00C93772 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43B07D91849B37D00C93772 /* XCTest.framework */; };
-		E43B07DB1849B37D00C93772 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43B07BA1849B37D00C93772 /* Foundation.framework */; };
-		E43B07DC1849B37D00C93772 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43B07BE1849B37D00C93772 /* UIKit.framework */; };
-		E43B07E41849B37D00C93772 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E43B07E21849B37D00C93772 /* InfoPlist.strings */; };
-		E43B07E61849B37D00C93772 /* GREVocabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E43B07E51849B37D00C93772 /* GREVocabTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E43B07DD1849B37D00C93772 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E43B07AF1849B37D00C93772 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E43B07B61849B37D00C93772;
-			remoteInfo = GREVocab;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		E43B07B71849B37D00C93772 /* GREVocab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GREVocab.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E43B07BA1849B37D00C93772 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E43B07BC1849B37D00C93772 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E43B07BE1849B37D00C93772 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E43B07C21849B37D00C93772 /* GREVocab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GREVocab-Info.plist"; sourceTree = "<group>"; };
-		E43B07C41849B37D00C93772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E43B07C61849B37D00C93772 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E43B07C81849B37D00C93772 /* GREVocab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GREVocab-Prefix.pch"; sourceTree = "<group>"; };
-		E43B07C91849B37D00C93772 /* GVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVAppDelegate.h; sourceTree = "<group>"; };
-		E43B07CA1849B37D00C93772 /* GVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GVAppDelegate.m; sourceTree = "<group>"; };
-		E43B07CD1849B37D00C93772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E43B07CF1849B37D00C93772 /* GVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVViewController.h; sourceTree = "<group>"; };
-		E43B07D01849B37D00C93772 /* GVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GVViewController.m; sourceTree = "<group>"; };
-		E43B07D21849B37D00C93772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E43B07D81849B37D00C93772 /* GREVocabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GREVocabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E43B07D91849B37D00C93772 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E43B07E11849B37D00C93772 /* GREVocabTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GREVocabTests-Info.plist"; sourceTree = "<group>"; };
-		E43B07E31849B37D00C93772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E43B07E51849B37D00C93772 /* GREVocabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GREVocabTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		E43B07B41849B37D00C93772 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E43B07BD1849B37D00C93772 /* CoreGraphics.framework in Frameworks */,
-				E43B07BF1849B37D00C93772 /* UIKit.framework in Frameworks */,
-				E43B07BB1849B37D00C93772 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E43B07D51849B37D00C93772 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E43B07DA1849B37D00C93772 /* XCTest.framework in Frameworks */,
-				E43B07DC1849B37D00C93772 /* UIKit.framework in Frameworks */,
-				E43B07DB1849B37D00C93772 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		E43B07AE1849B37D00C93772 = {
-			isa = PBXGroup;
-			children = (
-				E43B07C01849B37D00C93772 /* GREVocab */,
-				E43B07DF1849B37D00C93772 /* GREVocabTests */,
-				E43B07B91849B37D00C93772 /* Frameworks */,
-				E43B07B81849B37D00C93772 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		E43B07B81849B37D00C93772 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E43B07B71849B37D00C93772 /* GREVocab.app */,
-				E43B07D81849B37D00C93772 /* GREVocabTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E43B07B91849B37D00C93772 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E43B07BA1849B37D00C93772 /* Foundation.framework */,
-				E43B07BC1849B37D00C93772 /* CoreGraphics.framework */,
-				E43B07BE1849B37D00C93772 /* UIKit.framework */,
-				E43B07D91849B37D00C93772 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E43B07C01849B37D00C93772 /* GREVocab */ = {
-			isa = PBXGroup;
-			children = (
-				E43B07C91849B37D00C93772 /* GVAppDelegate.h */,
-				E43B07CA1849B37D00C93772 /* GVAppDelegate.m */,
-				E43B07CC1849B37D00C93772 /* Main.storyboard */,
-				E43B07CF1849B37D00C93772 /* GVViewController.h */,
-				E43B07D01849B37D00C93772 /* GVViewController.m */,
-				E43B07D21849B37D00C93772 /* Images.xcassets */,
-				E43B07C11849B37D00C93772 /* Supporting Files */,
-			);
-			path = GREVocab;
-			sourceTree = "<group>";
-		};
-		E43B07C11849B37D00C93772 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E43B07C21849B37D00C93772 /* GREVocab-Info.plist */,
-				E43B07C31849B37D00C93772 /* InfoPlist.strings */,
-				E43B07C61849B37D00C93772 /* main.m */,
-				E43B07C81849B37D00C93772 /* GREVocab-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E43B07DF1849B37D00C93772 /* GREVocabTests */ = {
-			isa = PBXGroup;
-			children = (
-				E43B07E51849B37D00C93772 /* GREVocabTests.m */,
-				E43B07E01849B37D00C93772 /* Supporting Files */,
-			);
-			path = GREVocabTests;
-			sourceTree = "<group>";
-		};
-		E43B07E01849B37D00C93772 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E43B07E11849B37D00C93772 /* GREVocabTests-Info.plist */,
-				E43B07E21849B37D00C93772 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		E43B07B61849B37D00C93772 /* GREVocab */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E43B07E91849B37D00C93772 /* Build configuration list for PBXNativeTarget "GREVocab" */;
-			buildPhases = (
-				E43B07B31849B37D00C93772 /* Sources */,
-				E43B07B41849B37D00C93772 /* Frameworks */,
-				E43B07B51849B37D00C93772 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GREVocab;
-			productName = GREVocab;
-			productReference = E43B07B71849B37D00C93772 /* GREVocab.app */;
-			productType = "com.apple.product-type.application";
-		};
-		E43B07D71849B37D00C93772 /* GREVocabTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E43B07EC1849B37D00C93772 /* Build configuration list for PBXNativeTarget "GREVocabTests" */;
-			buildPhases = (
-				E43B07D41849B37D00C93772 /* Sources */,
-				E43B07D51849B37D00C93772 /* Frameworks */,
-				E43B07D61849B37D00C93772 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E43B07DE1849B37D00C93772 /* PBXTargetDependency */,
-			);
-			name = GREVocabTests;
-			productName = GREVocabTests;
-			productReference = E43B07D81849B37D00C93772 /* GREVocabTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		E43B07AF1849B37D00C93772 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = GV;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Tera Mo labs";
-				TargetAttributes = {
-					E43B07D71849B37D00C93772 = {
-						TestTargetID = E43B07B61849B37D00C93772;
-					};
-				};
-			};
-			buildConfigurationList = E43B07B21849B37D00C93772 /* Build configuration list for PBXProject "GREVocab" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = E43B07AE1849B37D00C93772;
-			productRefGroup = E43B07B81849B37D00C93772 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				E43B07B61849B37D00C93772 /* GREVocab */,
-				E43B07D71849B37D00C93772 /* GREVocabTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		E43B07B51849B37D00C93772 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E43B07D31849B37D00C93772 /* Images.xcassets in Resources */,
-				E43B07C51849B37D00C93772 /* InfoPlist.strings in Resources */,
-				E43B07CE1849B37D00C93772 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E43B07D61849B37D00C93772 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E43B07E41849B37D00C93772 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		E43B07B31849B37D00C93772 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E43B07C71849B37D00C93772 /* main.m in Sources */,
-				E43B07D11849B37D00C93772 /* GVViewController.m in Sources */,
-				E43B07CB1849B37D00C93772 /* GVAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E43B07D41849B37D00C93772 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E43B07E61849B37D00C93772 /* GREVocabTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E43B07DE1849B37D00C93772 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E43B07B61849B37D00C93772 /* GREVocab */;
-			targetProxy = E43B07DD1849B37D00C93772 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E43B07C31849B37D00C93772 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E43B07C41849B37D00C93772 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E43B07CC1849B37D00C93772 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E43B07CD1849B37D00C93772 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E43B07E21849B37D00C93772 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E43B07E31849B37D00C93772 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		E43B07E71849B37D00C93772 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		E43B07E81849B37D00C93772 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E43B07EA1849B37D00C93772 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GREVocab/GREVocab-Prefix.pch";
-				INFOPLIST_FILE = "GREVocab/GREVocab-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		E43B07EB1849B37D00C93772 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GREVocab/GREVocab-Prefix.pch";
-				INFOPLIST_FILE = "GREVocab/GREVocab-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		E43B07ED1849B37D00C93772 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GREVocab.app/GREVocab";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GREVocab/GREVocab-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "GREVocabTests/GREVocabTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		E43B07EE1849B37D00C93772 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GREVocab.app/GREVocab";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GREVocab/GREVocab-Prefix.pch";
-				INFOPLIST_FILE = "GREVocabTests/GREVocabTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		E43B07B21849B37D00C93772 /* Build configuration list for PBXProject "GREVocab" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E43B07E71849B37D00C93772 /* Debug */,
-				E43B07E81849B37D00C93772 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E43B07E91849B37D00C93772 /* Build configuration list for PBXNativeTarget "GREVocab" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E43B07EA1849B37D00C93772 /* Debug */,
-				E43B07EB1849B37D00C93772 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		E43B07EC1849B37D00C93772 /* Build configuration list for PBXNativeTarget "GREVocabTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E43B07ED1849B37D00C93772 /* Debug */,
-				E43B07EE1849B37D00C93772 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = E43B07AF1849B37D00C93772 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0C808232E3DC4FC6A14F3A03</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>105B517D1B3F410EB0CC9BE2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>BEB8725249E24DAB8732C3E5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>E43B07AE1849B37D00C93772</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E43B07C01849B37D00C93772</string>
+				<string>E43B07DF1849B37D00C93772</string>
+				<string>E43B07B91849B37D00C93772</string>
+				<string>E43B07B81849B37D00C93772</string>
+				<string>0C808232E3DC4FC6A14F3A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07AF1849B37D00C93772</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>GV</string>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Tera Mo labs</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>E43B07D71849B37D00C93772</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>E43B07B61849B37D00C93772</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>E43B07B21849B37D00C93772</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>E43B07AE1849B37D00C93772</string>
+			<key>productRefGroup</key>
+			<string>E43B07B81849B37D00C93772</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>E43B07B61849B37D00C93772</string>
+				<string>E43B07D71849B37D00C93772</string>
+			</array>
+		</dict>
+		<key>E43B07B21849B37D00C93772</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E43B07E71849B37D00C93772</string>
+				<string>E43B07E81849B37D00C93772</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E43B07B31849B37D00C93772</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E43B07C71849B37D00C93772</string>
+				<string>E43B07D11849B37D00C93772</string>
+				<string>E43B07CB1849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E43B07B41849B37D00C93772</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E43B07BD1849B37D00C93772</string>
+				<string>E43B07BF1849B37D00C93772</string>
+				<string>E43B07BB1849B37D00C93772</string>
+				<string>E9D1C2B288284117B49FCACC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E43B07B51849B37D00C93772</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E43B07D31849B37D00C93772</string>
+				<string>E43B07C51849B37D00C93772</string>
+				<string>E43B07CE1849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E43B07B61849B37D00C93772</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E43B07E91849B37D00C93772</string>
+			<key>buildPhases</key>
+			<array>
+				<string>105B517D1B3F410EB0CC9BE2</string>
+				<string>E43B07B31849B37D00C93772</string>
+				<string>E43B07B41849B37D00C93772</string>
+				<string>E43B07B51849B37D00C93772</string>
+				<string>BEB8725249E24DAB8732C3E5</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>GREVocab</string>
+			<key>productName</key>
+			<string>GREVocab</string>
+			<key>productReference</key>
+			<string>E43B07B71849B37D00C93772</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>E43B07B71849B37D00C93772</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>GREVocab.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E43B07B81849B37D00C93772</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E43B07B71849B37D00C93772</string>
+				<string>E43B07D81849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07B91849B37D00C93772</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E43B07BA1849B37D00C93772</string>
+				<string>E43B07BC1849B37D00C93772</string>
+				<string>E43B07BE1849B37D00C93772</string>
+				<string>E43B07D91849B37D00C93772</string>
+				<string>EA1718CFA90A42A89CE98790</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07BA1849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E43B07BB1849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07BA1849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07BC1849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E43B07BD1849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07BC1849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07BE1849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E43B07BF1849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07BE1849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07C01849B37D00C93772</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E43B07C91849B37D00C93772</string>
+				<string>E43B07CA1849B37D00C93772</string>
+				<string>E43B07CC1849B37D00C93772</string>
+				<string>E43B07CF1849B37D00C93772</string>
+				<string>E43B07D01849B37D00C93772</string>
+				<string>E43B07D21849B37D00C93772</string>
+				<string>E43B07C11849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>GREVocab</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07C11849B37D00C93772</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E43B07C21849B37D00C93772</string>
+				<string>E43B07C31849B37D00C93772</string>
+				<string>E43B07C61849B37D00C93772</string>
+				<string>E43B07C81849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07C21849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>GREVocab-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07C31849B37D00C93772</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E43B07C41849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07C41849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07C51849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07C31849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07C61849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07C71849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07C61849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07C81849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GREVocab-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07C91849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GVAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07CA1849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GVAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07CB1849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07CA1849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07CC1849B37D00C93772</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E43B07CD1849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07CD1849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07CE1849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07CC1849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07CF1849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GVViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07D01849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GVViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07D11849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07D01849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07D21849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07D31849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07D21849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07D41849B37D00C93772</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E43B07E61849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E43B07D51849B37D00C93772</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E43B07DA1849B37D00C93772</string>
+				<string>E43B07DC1849B37D00C93772</string>
+				<string>E43B07DB1849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E43B07D61849B37D00C93772</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E43B07E41849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E43B07D71849B37D00C93772</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E43B07EC1849B37D00C93772</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E43B07D41849B37D00C93772</string>
+				<string>E43B07D51849B37D00C93772</string>
+				<string>E43B07D61849B37D00C93772</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>E43B07DE1849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>GREVocabTests</string>
+			<key>productName</key>
+			<string>GREVocabTests</string>
+			<key>productReference</key>
+			<string>E43B07D81849B37D00C93772</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>E43B07D81849B37D00C93772</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>GREVocabTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E43B07D91849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>E43B07DA1849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07D91849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07DB1849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07BA1849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07DC1849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07BE1849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07DD1849B37D00C93772</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>E43B07AF1849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E43B07B61849B37D00C93772</string>
+			<key>remoteInfo</key>
+			<string>GREVocab</string>
+		</dict>
+		<key>E43B07DE1849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>E43B07B61849B37D00C93772</string>
+			<key>targetProxy</key>
+			<string>E43B07DD1849B37D00C93772</string>
+		</dict>
+		<key>E43B07DF1849B37D00C93772</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E43B07E51849B37D00C93772</string>
+				<string>E43B07E01849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>GREVocabTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07E01849B37D00C93772</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E43B07E11849B37D00C93772</string>
+				<string>E43B07E21849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07E11849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>GREVocabTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07E21849B37D00C93772</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E43B07E31849B37D00C93772</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07E31849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07E41849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07E21849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07E51849B37D00C93772</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GREVocabTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E43B07E61849B37D00C93772</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E43B07E51849B37D00C93772</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E43B07E71849B37D00C93772</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E43B07E81849B37D00C93772</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E43B07E91849B37D00C93772</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E43B07EA1849B37D00C93772</string>
+				<string>E43B07EB1849B37D00C93772</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E43B07EA1849B37D00C93772</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>0C808232E3DC4FC6A14F3A03</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GREVocab/GREVocab-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>GREVocab/GREVocab-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E43B07EB1849B37D00C93772</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>0C808232E3DC4FC6A14F3A03</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GREVocab/GREVocab-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>GREVocab/GREVocab-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E43B07EC1849B37D00C93772</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E43B07ED1849B37D00C93772</string>
+				<string>E43B07EE1849B37D00C93772</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E43B07ED1849B37D00C93772</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/GREVocab.app/GREVocab</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GREVocab/GREVocab-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>GREVocabTests/GREVocabTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E43B07EE1849B37D00C93772</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/GREVocab.app/GREVocab</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GREVocab/GREVocab-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>GREVocabTests/GREVocabTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E9D1C2B288284117B49FCACC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EA1718CFA90A42A89CE98790</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EA1718CFA90A42A89CE98790</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>E43B07AF1849B37D00C93772</string>
+</dict>
+</plist>
