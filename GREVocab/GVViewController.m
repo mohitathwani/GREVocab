@@ -37,6 +37,8 @@
         self.partOfSpeechLabel.text = self.dictionary[@"Part of Speech"];
         self.definitionTextView.text = self.dictionary[@"Definition"];
         self.sentenceTextView.text = self.dictionary[@"Sentence"];
+        
+        self.navigationItem.title = self.dictionary[@"Word"];
     }
 }
 

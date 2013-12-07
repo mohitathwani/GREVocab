@@ -127,8 +127,7 @@
     GVViewController *dVC = [segue destinationViewController];
     dVC.dictionary = [[WordGenerator sharedInstance].jsonArray objectAtIndex:selectedIndexPath.row];
     dVC.modal = YES;
-
-
+    
 }
 
 
