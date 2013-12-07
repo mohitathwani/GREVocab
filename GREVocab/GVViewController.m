@@ -19,14 +19,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"https://copy.com/rxqBn4nuyqXm" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        self.jsonArray = (NSArray *)responseObject;
-        NSLog(@"%@", self.jsonArray);
-        [self generateNewWord];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-    }];
+    [WordGenerator sharedInstance].delegate = self;
     
     
     
@@ -34,14 +27,17 @@
 
 - (void) generateNewWord {
     
-    int random = arc4random() % [self.jsonArray count];
+    int random = arc4random() % [[WordGenerator sharedInstance].jsonArray count];
     
-    self.wordLabel.text = self.jsonArray[random][@"Word"];
-    self.partOfSpeechLabel.text = self.jsonArray[random][@"Part of Speech"];
-    self.definitionTextView.text = self.jsonArray[random][@"Definition"];
-    self.sentenceTextView.text = self.jsonArray[random][@"Sentence"];
+    self.wordLabel.text = [[[WordGenerator sharedInstance].jsonArray objectAtIndex:random] objectForKey:@"Word"];
+    self.partOfSpeechLabel.text = [[[WordGenerator sharedInstance].jsonArray objectAtIndex:random] objectForKey:@"Part of Speech"];
+    self.definitionTextView.text = [[[WordGenerator sharedInstance].jsonArray objectAtIndex:random] objectForKey:@"Definition"];
+    self.sentenceTextView.text = [[[WordGenerator sharedInstance].jsonArray objectAtIndex:random] objectForKey:@"Sentence"];
 }
 
+- (void)doneDownloading {
+    [self generateNewWord];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

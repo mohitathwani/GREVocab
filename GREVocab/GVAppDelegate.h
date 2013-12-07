@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WordGenerator.h"
 
 @interface GVAppDelegate : UIResponder <UIApplicationDelegate>
 

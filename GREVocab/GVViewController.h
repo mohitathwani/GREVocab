@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AFNetworking.h"
+#import "WordGenerator.h"
 
-@interface GVViewController : UIViewController
+@interface GVViewController : UIViewController<WordGeneratorDelegate>
 
-@property (nonatomic, strong) NSArray *jsonArray;
+
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
 @property (weak, nonatomic) IBOutlet UILabel *partOfSpeechLabel;
 @property (weak, nonatomic) IBOutlet UITextView *definitionTextView;
