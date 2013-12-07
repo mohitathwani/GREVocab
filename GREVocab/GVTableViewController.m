@@ -34,10 +34,13 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [WordGenerator sharedInstance].delegate = self;
+    
+    [self.refreshControl addTarget:[WordGenerator sharedInstance] action:@selector(downloadJSONFile) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void) doneDownloading {
     [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
 }
 - (void)didReceiveMemoryWarning
 {
