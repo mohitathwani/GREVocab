@@ -11,7 +11,8 @@
 
 @interface GVViewController : UIViewController<WordGeneratorDelegate>
 
-
+@property (nonatomic, getter = isModal) BOOL modal;
+@property (weak, nonatomic) NSDictionary *dictionary;
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
 @property (weak, nonatomic) IBOutlet UILabel *partOfSpeechLabel;
 @property (weak, nonatomic) IBOutlet UITextView *definitionTextView;

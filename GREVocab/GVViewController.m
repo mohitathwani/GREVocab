@@ -21,11 +21,32 @@
     
     [WordGenerator sharedInstance].delegate = self;
     
+    if (!self.modal) {
+        [self generateNewWord];
+    }
+    
     
     
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (self.modal) {
+        self.wordLabel.text = self.dictionary[@"Word"];
+        self.partOfSpeechLabel.text = self.dictionary[@"Part of Speech"];
+        self.definitionTextView.text = self.dictionary[@"Definition"];
+        self.sentenceTextView.text = self.dictionary[@"Sentence"];
+    }
+}
+
+- (void) viewDidDisappear:(BOOL)animated {
+    self.modal = NO;
+}
+
 - (void) generateNewWord {
+    
+    
     
     int random = arc4random() % [[WordGenerator sharedInstance].jsonArray count];
     
@@ -33,6 +54,8 @@
     self.partOfSpeechLabel.text = [[[WordGenerator sharedInstance].jsonArray objectAtIndex:random] objectForKey:@"Part of Speech"];
     self.definitionTextView.text = [[[WordGenerator sharedInstance].jsonArray objectAtIndex:random] objectForKey:@"Definition"];
     self.sentenceTextView.text = [[[WordGenerator sharedInstance].jsonArray objectAtIndex:random] objectForKey:@"Sentence"];
+    
+    
 }
 
 - (void)doneDownloading {
@@ -45,6 +68,10 @@
 }
 
 - (IBAction)tapGesture:(UITapGestureRecognizer *)sender {
-    [self generateNewWord];
+    
+    if (!self.modal) {
+        [self generateNewWord];
+    }
+    
 }
 @end

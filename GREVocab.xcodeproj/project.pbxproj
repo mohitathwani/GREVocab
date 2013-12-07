@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		066D528C18535CD40028EEE9 /* WordGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 066D528B18535CD40028EEE9 /* WordGenerator.m */; };
+		066D528F1853631E0028EEE9 /* GVTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066D528E1853631E0028EEE9 /* GVTableViewController.m */; };
 		E43B07BB1849B37D00C93772 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43B07BA1849B37D00C93772 /* Foundation.framework */; };
 		E43B07BD1849B37D00C93772 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43B07BC1849B37D00C93772 /* CoreGraphics.framework */; };
 		E43B07BF1849B37D00C93772 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43B07BE1849B37D00C93772 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		066D528A18535CD40028EEE9 /* WordGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordGenerator.h; sourceTree = "<group>"; };
 		066D528B18535CD40028EEE9 /* WordGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordGenerator.m; sourceTree = "<group>"; };
+		066D528D1853631E0028EEE9 /* GVTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVTableViewController.h; sourceTree = "<group>"; };
+		066D528E1853631E0028EEE9 /* GVTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVTableViewController.m; sourceTree = "<group>"; };
 		0C808232E3DC4FC6A14F3A03 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E43B07B71849B37D00C93772 /* GREVocab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GREVocab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43B07BA1849B37D00C93772 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -130,6 +133,8 @@
 				E43B07C11849B37D00C93772 /* Supporting Files */,
 				066D528A18535CD40028EEE9 /* WordGenerator.h */,
 				066D528B18535CD40028EEE9 /* WordGenerator.m */,
+				066D528D1853631E0028EEE9 /* GVTableViewController.h */,
+				066D528E1853631E0028EEE9 /* GVTableViewController.m */,
 			);
 			path = GREVocab;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				E43B07C71849B37D00C93772 /* main.m in Sources */,
 				066D528C18535CD40028EEE9 /* WordGenerator.m in Sources */,
 				E43B07D11849B37D00C93772 /* GVViewController.m in Sources */,
+				066D528F1853631E0028EEE9 /* GVTableViewController.m in Sources */,
 				E43B07CB1849B37D00C93772 /* GVAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
