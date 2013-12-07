@@ -36,7 +36,7 @@
             </objects>
             <point key="canvasLocation" x="1087" y="-313"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--View Controller - Random-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="GVViewController" sceneMemberID="viewController">
@@ -82,7 +82,7 @@
                             <outletCollection property="gestureRecognizers" destination="ACD-Qv-qi1" appends="YES" id="Cos-wb-Ynn"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mUH-wG-XDq"/>
+                    <tabBarItem key="tabBarItem" title="Random" id="mUH-wG-XDq"/>
                     <navigationItem key="navigationItem" id="i57-y9-R0W"/>
                     <connections>
                         <outlet property="definitionTextView" destination="t4Q-1H-jQh" id="nvW-MM-ZVx"/>
@@ -119,11 +119,11 @@
             </objects>
             <point key="canvasLocation" x="138" y="31"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - List-->
         <scene sceneID="WIT-er-GLo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nN1-VB-Xng" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="GF5-Zo-cYN"/>
+                    <tabBarItem key="tabBarItem" title="List" id="GF5-Zo-cYN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nMQ-4R-D4t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -145,6 +145,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fCu-FL-wQ0"/>
+        <segue reference="6Ez-Tu-Mbb"/>
     </inferredMetricsTieBreakers>
 </document>
